@@ -13,8 +13,25 @@
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * Math.floor(max - min)) + min;
 }
-
+alert("hello");
 var randomInt = getRandomInt(1, 100);
+var guessNumber = prompt("what number do you think is the right one?");
+while(guessNumber != randomInt){
+	var guessNumber = prompt("what number do you think is the right one?");
+	if (guessNumber > randomInt){
+		alert("Guess too high ");
+	}
+	else if(guessNumber < randomInt){
+		alert("Guess too low");
+	}
+	else if(guessNumber == randomInt){
+		alert("you got it right ");
+	}
+	var i = 1;
+	i = i + 1;
+
+}
+alert("you tried to guess the number one too many times:"+i);
 /* END STARTING CODE */
 
 // your code goes under here
